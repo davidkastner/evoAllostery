@@ -32,42 +32,33 @@ In order to run these calculations, we will need to install some dependencies.
 The Ranganathan Lab has included a beautiful tutorial with the pySCA distribution.
 Walking though the pySCA installation tutorial will also install all other dependencies.
 You can use a package manager like homebrew to keep the installation clean.
-Here I will outline the installation steps, but make sure to refer to the Ranganathan tutorial.
+The installation is summarized below, but make sure to refer to the Ranganathan tutorial:
+https://ranganathanlab.gitlab.io/pySCA/install/
 
 1. Core system dependencies
-    * Xcode developer scaTool
     > xcode-select --install
-    * python 3
     > brew install python3
-    * Pip
-    >
-    * GCC
     > brew install gcc
 
-1. pySCA
-> https://ranganathanlab.gitlab.io/pySCA/install/
+2. Fasta36
+    > git clone https://github.com/wrpearson/fasta36.git
+    > cd fasta36/src
+    > make -j2 -f ../make/Makefile.os_x86_64 all
+    > cp -r ../bin /usr/local
+    > rm /usr/local/bin/README
+    > cd ../..
 
-2. scipy
-> conda install -c anaconda scipy
+3. pySCA
+    > git clone https://github.com/ranganathanlab/pySCA.git
+    > cd pySCA-master
+    > pip install .
 
-3. pysca
->
-
-4. Install
-
-import os
-import time
-import matplotlib.pyplot as plt
-import math
-import numpy as np
-import copy
-import scipy.cluster.hierarchy as sch
-from scipy.stats import scoreatpercentile
-from pysca import scaTools as sca
-import colorsys
-# import mpld3
-import pickle as pickle
-from optparse import OptionParser
+4. The pySCA distribution automatically installs the following:
+    * numpy
+    * scipy
+    * argparse
+    * wheel
+    * matplotlib
 
 ## Generating the Summary Histogram and Heatmap
 
