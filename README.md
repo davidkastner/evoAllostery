@@ -5,7 +5,7 @@
 3. Multiple sequence alignment
 4. Generate the correlation matrix
 
-![Graphical Summary of README](https://octodex.github.com/images/yaktocat.png)
+![Graphical Summary of README](Images/graphical_summary.png)
 
 ## Introduction
 
