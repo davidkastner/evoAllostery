@@ -36,22 +36,22 @@ The installation is summarized below, but make sure to refer to the Ranganathan 
 https://ranganathanlab.gitlab.io/pySCA/install/
 
 1. Core system dependencies
-    > xcode-select --install
-    > brew install python3
-    > brew install gcc
+    > xcode-select --install  
+    > brew install python3  
+    > brew install gcc  
 
 2. Fasta36
-    > git clone https://github.com/wrpearson/fasta36.git
-    > cd fasta36/src
-    > make -j2 -f ../make/Makefile.os_x86_64 all
-    > cp -r ../bin /usr/local
-    > rm /usr/local/bin/README
-    > cd ../..
+    > git clone https://github.com/wrpearson/fasta36.git  
+    > cd fasta36/src  
+    > make -j2 -f ../make/Makefile.os_x86_64 all  
+    > cp -r ../bin /usr/local  
+    > rm /usr/local/bin/README  
+    > cd ../..  
 
 3. pySCA
-    > git clone https://github.com/ranganathanlab/pySCA.git
-    > cd pySCA-master
-    > pip install .
+    > git clone https://github.com/ranganathanlab/pySCA.git  
+    > cd pySCA-master  
+    > pip install .  
 
 4. The pySCA distribution automatically installs the following:
     * numpy
