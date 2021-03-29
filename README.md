@@ -3,13 +3,13 @@
 _**Graphical Summary:** Brief introduction > Generating multiple sequence alignments > Generating a Correlation Matrix_
 
 ## Table of Contents
-1. Introduction
+1. **Introduction**
     * Raw data description
     * Installing dependencies
-2. Multiple sequence alignment
+2. **Multiple sequence alignment**
     * Creating your own MSA
     * Annotating your MSA
-3. Generate the correlation matrix
+3. **Generate the correlation matrix**
     * Running the scripts
     * Interpreting the results
 
@@ -53,3 +53,6 @@ import pickle as pickle
 from optparse import OptionParser
 
 ## Generating the Summary Histogram and Heatmap
+
+## Citations
+1.
