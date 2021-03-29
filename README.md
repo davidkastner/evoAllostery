@@ -4,11 +4,14 @@ _**Graphical Summary:** Brief introduction > Generating multiple sequence alignm
 
 ## Table of Contents
 1. Introduction
-2. Installing dependencies
-3. Multiple sequence alignment
-4. Generate the correlation matrix
-
-
+    * Raw data description
+    * Installing dependencies
+2. Multiple sequence alignment
+    * Creating your own MSA
+    * Annotating your MSA
+3. Generate the correlation matrix
+    * Running the scripts
+    * Interpreting the results
 
 ## Introduction
 
