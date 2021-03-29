@@ -1,5 +1,5 @@
-#Statistical Coupling Analysis for the V-set Protein Family
-##Introduction
+# Statistical Coupling Analysis for the V-set Protein Family
+## Introduction
 
 For this project, the raw date as been stored in a binary database file.
 It contains the multiple sequence alignment for the V-set protein family.
@@ -12,7 +12,7 @@ In order to run these calculations, we will need to install some dependencies.
 For a clean set up, we recommend using brew on MacOS.
 Similar commands can be used for Linux and windows.
 
-##Installation
+## Installation
 1. Install matplotlib
 > conda install -c conda-forge matplotlib
 
@@ -36,4 +36,4 @@ import colorsys
 import pickle as pickle
 from optparse import OptionParser
 
-##Generating the Summary Histogram and Heatmap
+## Generating the Summary Histogram and Heatmap
