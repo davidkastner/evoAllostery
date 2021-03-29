@@ -1,8 +1,8 @@
 # Statistical Coupling Analysis for the V-set Protein Family
 ## Table of Contents
-1. Introduction to Statistical Coupling Analysis
+1. Introduction
 2. Installing dependencies
-3. Obtaining a multiple sequence alignment
+3. Multiple sequence alignment
 4. Figure 1
 
 ## Introduction
@@ -13,7 +13,6 @@ Each protein sequence belongs to the V-set protein family and
 is annotated with phylogenetic metadata.
 While this dataset can be easily accessed via the PFam database website,
 we have included the processes database file here for ease of use.
-
 
 > https://pfam.xfam.org/family/V-set
 
