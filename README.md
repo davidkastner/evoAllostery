@@ -48,7 +48,7 @@ however, more functionality will be added in the future.
 ### Installing dependencies
 In order to run these calculations, we will need to install some dependencies.
 The Ranganathan Lab has included a beautiful tutorial with the pySCA distribution.
-Completely the Ranganathan Lab pySCA installation tutorial will automatically install several other dependencies, including:
+Completing the Ranganathan Lab pySCA installation tutorial will automatically install several other dependencies, including:
 numpy, scipy, argparse, wheel, and matplotlib.
 You can use a package manager like homebrew to keep the installation clean.
 The installation is summarized below,
