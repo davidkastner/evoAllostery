@@ -22,11 +22,12 @@ This file contains a multiple sequence alignment generated from 60,000 V-set seq
 Using the pySCA API, the multiple sequence alignment has been enhanced to include phylogenetic metadata.
 While this dataset can be easily accessed via the PFam database website,
 we have included the processed database file here for ease of use.
+You can find it in the _data_ directory.
 For the original multiple sequence alignment:
 
 > https://pfam.xfam.org/family/V-set
 
-## Installation
+### Installation
 
 In order to run these calculations, we will need to install some dependencies.
 The Ranganathan Lab has included a beautiful tutorial with the pySCA distribution.
