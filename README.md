@@ -83,6 +83,7 @@ https://ranganathanlab.gitlab.io/pySCA/install/
 ## III. Multiple Sequence Alignment
 
 _Note: This step is optional and is performed in the pySCA directory created upon completion of step 3 of the installation._
+_We repeat, it is not part of this repo and is generated specifically to your system upon installation of pySCA._
 https://ranganathanlab.gitlab.io/pySCA/install/
 
 While we have provided the multiple sequence alignment (MSA) file, it can also be generated from scratch.
