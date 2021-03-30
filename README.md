@@ -96,7 +96,7 @@ Lastly, download the database annotation file 'pfamseq.txt' from:
 http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/database_files/.
 This file is very large and will take around 5 hours to finish downloading.  
 
-Add all three files to the pySCA directory at /pySCA-master/data/.
+Add all three files to the pySCA directory at ./pySCA-master/data/.
 Run the following commands from the terminal to process the annotated MSA file.
 These commands create the same .db file that we have provided.
 For benchmarking purposes, you should know that the first line is the most computationally expensive.
@@ -121,6 +121,8 @@ When it completes, the figure will be placed automatically in the Figures direct
 For reference, an example of the figure has been provided in the Figures directory.
 It is called "fig1_example.pdf."
 
+> git clone https://github.com/davidkastner/domain-clusters.git  
+> cd domain-clusters/Scripts  
 > python data_analysis.py  
 
 ## Citations
