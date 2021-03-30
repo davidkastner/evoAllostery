@@ -61,7 +61,29 @@ https://ranganathanlab.gitlab.io/pySCA/install/
     * wheel
     * matplotlib
 
-## Generating the Summary Histogram and Heatmap
+## Multiple Sequence Alignment
+### Creating the MSA
+
+_Note: This step is optional and is performed in the pySCA directory created upon installation_
+
+While we have provided the multiple sequence alignment (MSA) file, it can also be generated from scratch.
+If you wish to use our MSA then you can use the file system in this Github, and skip to the next section.
+If you wish to generate the MSA then you will need to use the pySCA installation directory.
+First, visit the PFam website and search for the V-set protein family: https://pfam.xfam.org/family/V-set.
+Download the MSA as an annotation file in the FASTA file format.
+You will also need the PDB for PD-1, which can be found here: https://www.rcsb.org/structure/3BIK.
+Lastly, download the databased annotation file 'pfamseq.txt': http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/database_files/.
+This file is very large and will take several hours to finish downloading.
+Add all three files to the pySCA base directory at /pySCA-master/data/.
+Run the following commands from the terminal to process the annotated MSA file.
+These commands create the same .db file that we have provided:
+
+> annotateMSA -i ../data/PF07686_full.txt -o ../data/PF07686_full.an -a 'pfam' -p ./data/pfamseq.txt  
+> scaProcessMSA -a ../data/PF07686_full.an -b ../data/ -s 3BIK -c B -f 'Homo sapiens' -t -n  
+> scaCore -i ../output/PF07686_full.db  
+> scaSectorID -i ../output/PF07686_full.db  
+
+### Annotating the MSA
 
 ## Citations
 1.
