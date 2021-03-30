@@ -91,8 +91,9 @@ If you wish to regenerate the MSA then you will need to use the pySCA installati
 First, visit the PFam website and search for the V-set protein family: https://pfam.xfam.org/family/V-set.
 Download the MSA as an annotation file in the FASTA file format.
 You will also need the PDB for PD-1, which can be found here: https://www.rcsb.org/structure/3BIK.
-Lastly, download the databased annotation file 'pfamseq.txt': http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/database_files/.
-This file is very large and will take several hours to finish downloading.  
+Lastly, download the database annotation file 'pfamseq.txt' from:
+http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/database_files/.
+This file is very large and will take around 5 hours to finish downloading.  
 
 Add all three files to the pySCA directory at /pySCA-master/data/.
 Run the following commands from the terminal to process the annotated MSA file.
