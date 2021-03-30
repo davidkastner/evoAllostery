@@ -15,12 +15,14 @@ Generating multiple sequence alignments > Generating a Correlation Matrix_
 
 ## 1. Overview
 ### Introduction
-The purpose of these repo is to facilitate running statistical coupling analyses for the V-set family proteins.
-Specifically, the project is looking at similarities between PD-1, PD-L1, and VISTA.
+The purpose of these repo is to facilitate running statistical coupling analysis for the V-set family proteins.
+Specifically, the project is looking at evolutional similarities between PD-1, PD-L1, and VISTA.
 The repo starts from raw structural and sequence data and generates a multiple sequence alignment for PD-1.
-The alignment is then processed to extract evolutionarily information,
+The alignment is then processed to extract evolutional information,
 to find domains under unique selectional pressure.
-The pySCA code was written by the Ranganathan Lab and is used extensively throughout the analysis (1,2).
+The pySCA code is written and maintained by the Ranganathan Lab and is used extensively throughout the analysis (1,2).
+It is beautifully documented here:  
+https://ranganathanlab.gitlab.io/pySCA/
 
 ### Raw data description
 
@@ -28,25 +30,26 @@ The raw data at the heart of our project is a single binary database file.
 This file contains a multiple sequence alignment generated from 60,000 V-set sequences.
 Using the pySCA API, the multiple sequence alignment has been enhanced to include phylogenetic metadata.
 While this dataset can be easily accessed via the PFam database website,
-we have included the processed database file here for ease of use.
-You can find it in the _Data_ directory.
-For the original multiple sequence alignment:
-
-> https://pfam.xfam.org/family/V-set
+we have included the processed database file here as they can take up to 7 hours to download and annotate.
+However, we will outline the process below for those who would benefit.
+You can find the database file in the _Data_ directory.
+For the original multiple sequence alignment data visit and select _Generate_:  
+https://pfam.xfam.org/family/V-set#tabview=tab3
 
 ## 2. Installation
 ### Folder structure
 The repo is divided into three key directories: _Data_, _Figures_, and _Scripts_.
 The _Data_ directory contains the raw database file with the multiple sequence alignment and phylogenetic annotations.
 The _Figures_ directory contains an example output figure for comparision and is where any output figures will be saved.
-The _Scripts_ directory contains a python scripts that interacts with the database file.
-The script called data_analysis currently will generated a single figure.
-However, more functionality will be added in the future.
+The _Scripts_ directory contains a python script that interacts with the database file.
+The script called _data_analysis_ currently will generated a single figure;
+however, more functionality will be added in the future.
 
 ### Installing dependencies
 In order to run these calculations, we will need to install some dependencies.
 The Ranganathan Lab has included a beautiful tutorial with the pySCA distribution.
-Walking though the pySCA installation tutorial will also install all other dependencies.
+Completely the Ranganathan Lab pySCA installation tutorial will automatically install several other dependencies, including:
+numpy, scipy, argparse, wheel, and matplotlib.
 You can use a package manager like homebrew to keep the installation clean.
 The installation is summarized below,
 but make sure to refer to the original Ranganathan tutorial for more details:
