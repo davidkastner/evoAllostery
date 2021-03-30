@@ -18,8 +18,7 @@ Generating multiple sequence alignments > Generating a Correlation Matrix_
 The purpose of these repo is to facilitate running statistical coupling analysis for the V-set family proteins.
 Specifically, the project is looking at evolutional similarities between PD-1, PD-L1, and VISTA.
 The repo starts from raw structural and sequence data and generates a multiple sequence alignment for PD-1.
-The alignment is then processed to extract evolutional information,
-to find domains under unique selectional pressure.
+The alignment is then processed to extract evolutional information to find domains under unique selectional pressure.
 The pySCA code is written and maintained by the Ranganathan Lab and is used extensively throughout the analysis (1,2).
 It is beautifully documented here:  
 https://ranganathanlab.gitlab.io/pySCA/
@@ -119,7 +118,7 @@ It will also generate a correlation matrix, which shows which sequences within t
 Due to the size of the database file, this script can take 15 minutes to complete.
 When it completes, the figure will be placed automatically in the Figures directory.
 For reference, an example of the figure has been provided in the Figures directory.
-It is called "fig1_example.pdf."
+It is called "fig1_example.png."
 
 > git clone https://github.com/davidkastner/domain-clusters.git  
 > cd domain-clusters/Scripts  
