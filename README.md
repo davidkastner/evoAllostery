@@ -1,6 +1,6 @@
 # Statistical Coupling Analysis for the V-set Protein Family
 ![Graphical Summary of README](Figures/graphical_summary.png)
-_**Graphical Summary:** Brief introduction >
+_**Graphical Summary:** Brief intro >
 Generating multiple sequence alignments > Generating a Correlation Matrix_
 
 ## Table of Contents
