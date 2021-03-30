@@ -7,9 +7,9 @@ import numpy as np
 import copy
 import scipy.cluster.hierarchy as sch
 from scipy.stats import scoreatpercentile
-# from pysca import scaTools as sca
-# import colorsys
-# import mpld3
+from pysca import scaTools as sca
+import colorsys
+import mpld3
 import pickle as pickle
 from optparse import OptionParser
 
@@ -19,9 +19,7 @@ from optparse import OptionParser
 
 # The raw database file is very large so we will open it using pickle
 # We will also save the relevant information
-print('before')
-db = pickle.load(open('./PF07686_full.db','rb'))
-print('after')
+db = pickle.load(open('../Data/PF07686_full.db','rb'))
 Dseq = db['sequence']
 Dsca = db['sca']
 Dsect = db['sector']
@@ -38,12 +36,17 @@ ind = R['leaves']
 # Plotting
 plt.rcParams['figure.figsize'] = 9, 4
 
+# Plot a histogram of all the pairwise interactions
 plt.subplot(121)
 plt.hist(listS, math.floor(Dseq['Npos']/2))
 plt.xlabel('Pairwise sequence identities', fontsize=14)
-plt.ylabel('Number', fontsize=14)
+plt.ylabel('Identity counts', fontsize=14)
 
+# Plot the correlation matrix
 plt.subplot(122)
 plt.imshow(Dsca['simMat'][np.ix_(ind,ind)], vmin=0, vmax=1)
+plt.xlabel('Sequence 2', fontsize=14)
+plt.ylabel('Sequence 1', fontsize=14)
 plt.colorbar()
-plt.savefig("./plot1.pdf")
+plt.tight_layout()
+plt.savefig("../Figures/fig1.png", dpi=300)

@@ -1,5 +1,5 @@
 # Statistical Coupling Analysis for the V-set Protein Family
-![Graphical Summary of README](Images/graphical_summary.png)
+![Graphical Summary of README](Figures/graphical_summary.png)
 _**Graphical Summary:** Brief introduction >
 Generating multiple sequence alignments > Generating a Correlation Matrix_
 
@@ -8,11 +8,7 @@ Generating multiple sequence alignments > Generating a Correlation Matrix_
     * Raw data description
     * Installing dependencies
 2. **Multiple sequence alignment**
-    * Creating your own MSA
-    * Annotating your MSA
 3. **Generate the correlation matrix**
-    * Running the scripts
-    * Interpreting the results
 
 ## Introduction
 ### Raw data description
@@ -62,9 +58,9 @@ https://ranganathanlab.gitlab.io/pySCA/install/
     * matplotlib
 
 ## Multiple Sequence Alignment
-### Creating the MSA
 
-_Note: This step is optional and is performed in the pySCA directory created upon installation_
+_Note: This step is optional and is performed in the pySCA directory created upon completion of step 3 of the installation._
+https://ranganathanlab.gitlab.io/pySCA/install/
 
 While we have provided the multiple sequence alignment (MSA) file, it can also be generated from scratch.
 If you wish to use our MSA then you can use the file system in this Github, and skip to the next section.
@@ -83,7 +79,19 @@ These commands create the same .db file that we have provided:
 > scaCore -i ../output/PF07686_full.db  
 > scaSectorID -i ../output/PF07686_full.db  
 
-### Annotating the MSA
+## Generating the correlation matrix
+
+Download the _domain-clusters_ repository.
+Inside the scripts directory of the _domain-clusters_ Github repository,
+you will find a python script.
+It takes a single file as input, the provided .db file, and outputs the figure.
+Once pySCA has been successfully installed,
+this script will create a histogram of all pairwise interactions within the dataset.
+It will also generate a correlation matrix, which shows which sequences within the MSA are correlated.
+Due to the size of the database file, this script can take 15 minutes to complete.
+For reference, an example of the figure has been provided in the Figures directory.
+It is called "fig1_example.pdf"
 
 ## Citations
-1.
+1. Rivoire, O., et al. Evolution-Based Functional Decomposition of Proteins. (2016)
+2. Halabi, N., et al. Protein sectors: evolutionary units of three-dimensional structure. Cell. 138, (2009).
