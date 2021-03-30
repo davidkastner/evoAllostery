@@ -14,8 +14,6 @@ import pickle as pickle
 from optparse import OptionParser
 
 # The files will need some where to go so we will create an output folder
-# if not os.path.exists('../output/'):
-#     os.makedirs('../output/')
 
 # The raw database file is very large so we will open it using pickle
 # We will also save the relevant information
