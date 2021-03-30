@@ -18,7 +18,7 @@ This file contains a multiple sequence alignment generated from 60,000 V-set seq
 Using the pySCA API, the multiple sequence alignment has been enhanced to include phylogenetic metadata.
 While this dataset can be easily accessed via the PFam database website,
 we have included the processed database file here for ease of use.
-You can find it in the _data_ directory.
+You can find it in the _Data_ directory.
 For the original multiple sequence alignment:
 
 > https://pfam.xfam.org/family/V-set
@@ -29,7 +29,8 @@ In order to run these calculations, we will need to install some dependencies.
 The Ranganathan Lab has included a beautiful tutorial with the pySCA distribution.
 Walking though the pySCA installation tutorial will also install all other dependencies.
 You can use a package manager like homebrew to keep the installation clean.
-The installation is summarized below, but make sure to refer to the Ranganathan tutorial:
+The installation is summarized below,
+but make sure to refer to the original Ranganathan tutorial for more details:
 https://ranganathanlab.gitlab.io/pySCA/install/
 
 1. Core system dependencies
@@ -70,9 +71,11 @@ Download the MSA as an annotation file in the FASTA file format.
 You will also need the PDB for PD-1, which can be found here: https://www.rcsb.org/structure/3BIK.
 Lastly, download the databased annotation file 'pfamseq.txt': http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/database_files/.
 This file is very large and will take several hours to finish downloading.
-Add all three files to the pySCA base directory at /pySCA-master/data/.
+Add all three files to the pySCA directory at /pySCA-master/data/.
 Run the following commands from the terminal to process the annotated MSA file.
-These commands create the same .db file that we have provided:
+These commands create the same .db file that we have provided.
+For benchmarking purposes, you should know that the first line is the most computationally expensive.
+It can take several hours. The following three should take less than 10 minutes.
 
 > annotateMSA -i ../data/PF07686_full.txt -o ../data/PF07686_full.an -a 'pfam' -p ./data/pfamseq.txt  
 > scaProcessMSA -a ../data/PF07686_full.an -b ../data/ -s 3BIK -c B -f 'Homo sapiens' -t -n  
@@ -89,8 +92,11 @@ Once pySCA has been successfully installed,
 this script will create a histogram of all pairwise interactions within the dataset.
 It will also generate a correlation matrix, which shows which sequences within the MSA are correlated.
 Due to the size of the database file, this script can take 15 minutes to complete.
+When it completes, the figure will be placed automatically in the Figures directory.
 For reference, an example of the figure has been provided in the Figures directory.
-It is called "fig1_example.pdf"
+It is called "fig1_example.pdf."
+
+> python data_analysis.py  
 
 ## Citations
 1. Rivoire, O., et al. Evolution-Based Functional Decomposition of Proteins. (2016)
