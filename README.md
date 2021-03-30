@@ -13,7 +13,7 @@ Generating multiple sequence alignments > Generating a Correlation Matrix_
 3. **Multiple sequence alignment**
 4. **Generate the correlation matrix**
 
-## 1. Overview
+## I. Overview
 ### Introduction
 The purpose of these repo is to facilitate running statistical coupling analysis for the V-set family proteins.
 Specifically, the project is looking at evolutional similarities between PD-1, PD-L1, and VISTA.
@@ -36,7 +36,7 @@ You can find the database file in the _Data_ directory.
 For the original multiple sequence alignment data visit and select _Generate_:  
 https://pfam.xfam.org/family/V-set#tabview=tab3
 
-## 2. Installation
+## II. Installation
 ### Folder structure
 The repo is divided into three key directories: _Data_, _Figures_, and _Scripts_.
 The _Data_ directory contains the raw database file with the multiple sequence alignment and phylogenetic annotations.
@@ -80,19 +80,20 @@ https://ranganathanlab.gitlab.io/pySCA/install/
     * wheel
     * matplotlib
 
-## 3. Multiple Sequence Alignment
+## III. Multiple Sequence Alignment
 
 _Note: This step is optional and is performed in the pySCA directory created upon completion of step 3 of the installation._
 https://ranganathanlab.gitlab.io/pySCA/install/
 
 While we have provided the multiple sequence alignment (MSA) file, it can also be generated from scratch.
-If you wish to use our MSA then you can use the file system in this Github, and skip to the next section.
-If you wish to generate the MSA then you will need to use the pySCA installation directory.
+If you wish to use our MSA then you can use the file system in this repo, and skip to the next section.
+If you wish to regenerate the MSA then you will need to use the pySCA installation directory created from step 3 of the installation.
 First, visit the PFam website and search for the V-set protein family: https://pfam.xfam.org/family/V-set.
 Download the MSA as an annotation file in the FASTA file format.
 You will also need the PDB for PD-1, which can be found here: https://www.rcsb.org/structure/3BIK.
 Lastly, download the databased annotation file 'pfamseq.txt': http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/database_files/.
-This file is very large and will take several hours to finish downloading.
+This file is very large and will take several hours to finish downloading.  
+
 Add all three files to the pySCA directory at /pySCA-master/data/.
 Run the following commands from the terminal to process the annotated MSA file.
 These commands create the same .db file that we have provided.
@@ -104,7 +105,7 @@ It can take several hours. The following three should take less than 10 minutes.
 > scaCore -i ../output/PF07686_full.db  
 > scaSectorID -i ../output/PF07686_full.db  
 
-## 4. Generating the correlation matrix
+## IV. Generating the correlation matrix
 
 Download the _domain-clusters_ repository.
 Inside the scripts directory of the _domain-clusters_ Github repository,
