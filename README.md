@@ -4,13 +4,24 @@ _**Graphical Summary:** Brief introduction >
 Generating multiple sequence alignments > Generating a Correlation Matrix_
 
 ## Table of Contents
-1. **Introduction**
+1. **Overview**
+    * Introduction
     * Raw data description
+2. **Installation**
+    * Folder structure
     * Installing dependencies
-2. **Multiple sequence alignment**
-3. **Generate the correlation matrix**
+3. **Multiple sequence alignment**
+4. **Generate the correlation matrix**
 
-## Introduction
+## 1. Overview
+### Introduction
+The purpose of these repo is to facilitate running statistical coupling analyses for the V-set family proteins.
+Specifically, the project is looking at similarities between PD-1, PD-L1, and VISTA.
+The repo starts from raw structural and sequence data and generates a multiple sequence alignment for PD-1.
+The alignment is then processed to extract evolutionarily information,
+to find domains under unique selectional pressure.
+The pySCA code was written by the Ranganathan Lab and is used extensively throughout the analysis (1,2).
+
 ### Raw data description
 
 The raw data at the heart of our project is a single binary database file.
@@ -23,8 +34,16 @@ For the original multiple sequence alignment:
 
 > https://pfam.xfam.org/family/V-set
 
-### Installation
+## 2. Installation
+### Folder structure
+The repo is divided into three key directories: _Data_, _Figures_, and _Scripts_.
+The _Data_ directory contains the raw database file with the multiple sequence alignment and phylogenetic annotations.
+The _Figures_ directory contains an example output figure for comparision and is where any output figures will be saved.
+The _Scripts_ directory contains a python scripts that interacts with the database file.
+The script called data_analysis currently will generated a single figure.
+However, more functionality will be added in the future.
 
+### Installing dependencies
 In order to run these calculations, we will need to install some dependencies.
 The Ranganathan Lab has included a beautiful tutorial with the pySCA distribution.
 Walking though the pySCA installation tutorial will also install all other dependencies.
@@ -58,7 +77,7 @@ https://ranganathanlab.gitlab.io/pySCA/install/
     * wheel
     * matplotlib
 
-## Multiple Sequence Alignment
+## 3. Multiple Sequence Alignment
 
 _Note: This step is optional and is performed in the pySCA directory created upon completion of step 3 of the installation._
 https://ranganathanlab.gitlab.io/pySCA/install/
@@ -82,7 +101,7 @@ It can take several hours. The following three should take less than 10 minutes.
 > scaCore -i ../output/PF07686_full.db  
 > scaSectorID -i ../output/PF07686_full.db  
 
-## Generating the correlation matrix
+## 4. Generating the correlation matrix
 
 Download the _domain-clusters_ repository.
 Inside the scripts directory of the _domain-clusters_ Github repository,
