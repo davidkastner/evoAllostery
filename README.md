@@ -51,8 +51,8 @@ The Ranganathan Lab has included a beautiful tutorial with the pySCA distributio
 Completing the Ranganathan Lab pySCA installation tutorial will automatically install several other dependencies, including:
 numpy, scipy, argparse, wheel, and matplotlib.
 You can use a package manager like homebrew to keep the installation clean.
-The installation is summarized below,
-but make sure to refer to the original Ranganathan tutorial for more details:
+The installation is summarized below as a supplement to the Ranganathan tutorial.
+However, make sure to refer to the original tutorial for system specific details details:
 https://ranganathanlab.gitlab.io/pySCA/install/
 
 1. Core system dependencies
