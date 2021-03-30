@@ -113,7 +113,7 @@ Download the _domain-clusters_ repository.
 Inside the scripts directory of the _domain-clusters_ Github repository,
 you will find a python script.
 It takes a single file as input, the provided .db file, and outputs the figure.
-Once pySCA has been successfully installed,
+With pySCA and dependencies successfully installed,
 this script will create a histogram of all pairwise interactions within the dataset.
 It will also generate a correlation matrix, which shows which sequences within the MSA are correlated.
 Due to the size of the database file, this script can take 15 minutes to complete.
