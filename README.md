@@ -1,8 +1,8 @@
-# Statistical Coupling Analysis
 ![Graphical Summary of README](Figures/graphical_summary.png)
-_**Graphical Summary:** Brief intro >
-Generating multiple sequence alignments > Generating a Correlation Matrix_
 
+---
+
+# Statistical Coupling Analysis
 ## Table of Contents
 1. **Overview**
     * Introduction
