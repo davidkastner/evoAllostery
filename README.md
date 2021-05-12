@@ -1,4 +1,4 @@
-# Statistical Coupling Analysis for the V-set Protein Family
+# Statistical Coupling Analysis
 ![Graphical Summary of README](Figures/graphical_summary.png)
 _**Graphical Summary:** Brief intro >
 Generating multiple sequence alignments > Generating a Correlation Matrix_
@@ -46,6 +46,7 @@ however, more functionality will be added in the future.
 
 ### Installing dependencies
 In order to run these calculations, we will need to install some dependencies.
+First, we will need to install the core dependencies which include the latest versions of Python and GCC.
 The Ranganathan Lab has included a beautiful tutorial with the pySCA distribution.
 Completing the Ranganathan Lab pySCA installation tutorial will automatically install several other dependencies, including:
 numpy, scipy, argparse, wheel, and matplotlib.
@@ -72,28 +73,16 @@ https://ranganathanlab.gitlab.io/pySCA/install/
     > cd pySCA-master  
     > pip install .  
 
-4. The pySCA distribution automatically installs the following:
+4. The pySCA distribution automatically installs the latest compatible versions of the following packages:
     * numpy
     * scipy
     * argparse
     * wheel
     * matplotlib
 
-## III. Multiple Sequence Alignment
+## III. Custon Multiple Sequence Alignment
 
-_Note: This step is optional and is performed in the pySCA directory created upon completion of step 3 of the installation._
-_We repeat, it is not part of this repo and is generated specifically to your system upon installation of pySCA._
-https://ranganathanlab.gitlab.io/pySCA/install/
 
-While we have provided the multiple sequence alignment (MSA) file, it can also be generated from scratch.
-If you wish to use our MSA then you can use the file system in this repo, and skip to the next section.
-If you wish to regenerate the MSA then you will need to use the pySCA installation directory created from step 3 of the installation.
-First, visit the PFam website and search for the V-set protein family: https://pfam.xfam.org/family/V-set.
-Download the MSA as an annotation file in the FASTA file format.
-You will also need the PDB for PD-1, which can be found here: https://www.rcsb.org/structure/3BIK.
-Lastly, download the database annotation file 'pfamseq.txt' from:
-http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/database_files/.
-This file is very large and will take around 5 hours to finish downloading.  
 
 Add all three files to the pySCA directory at ./pySCA-master/data/.
 Run the following commands from the terminal to process the annotated MSA file.
