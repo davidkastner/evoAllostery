@@ -1,4 +1,4 @@
-![Graphical Summary of README](Figures/graphical_summary.png)
+![Graphical Summary of README](Figures/header.png)
 
 ---
 
