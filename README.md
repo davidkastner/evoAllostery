@@ -16,8 +16,8 @@
 ## I. Overview
 ### Introduction
 The purpose of these repo is to facilitate running statistical coupling analysis for the V-set family proteins.
-Specifically, the project is looking at evolutional similarities between PD-1, PD-L1, and VISTA.
-The repo starts from raw structural and sequence data and generates a multiple sequence alignment for PD-1.
+Specifically, the project is looking at amino acid co-evolution in human siglecs.
+The repo starts from raw structural and sequence data and generates a multiple sequence alignment based on the sequence of Siglec-7.
 The alignment is then processed to extract evolutional information to find domains under unique selectional pressure.
 The pySCA code is written and maintained by the Ranganathan Lab and is used extensively throughout the analysis (1,2).
 It is beautifully documented here:  
@@ -25,7 +25,16 @@ https://ranganathanlab.gitlab.io/pySCA/
 
 ### Raw data description
 
-The raw data at the heart of our project is a single binary database file.
+
+## Custom MSA:
+The raw data at the heart of our project is a single binary database file. The sequences were generated using PSI-BLAST, with the sequence of siglec-7 used as
+the input (UNIPROT Q9Y286). The query length was set to match the crystal structure (PDB:1O7V). 
+To increase the accuracy and prevent false hits, we set the e-value threshold to 1x10-7 and a word size of two in both iterations. 
+A total of 9552 sequences were retrieved from the non-redundant (nr) database. For phylogenetic annotation, we wrote a script to parse the accession 
+numbers from the text file (can be found in the _Scripts_ directory). We used the 'ncbi' option in annotateMSA which uses the Biopython NCBI Entrez utility
+to look up taxonomic information.
+
+## PFAM Analysis:
 This file contains a multiple sequence alignment generated from 60,000 V-set sequences.
 Using the pySCA API, the multiple sequence alignment has been enhanced to include phylogenetic metadata.
 While this dataset can be easily accessed via the PFam database website,
@@ -80,7 +89,7 @@ https://ranganathanlab.gitlab.io/pySCA/install/
     * wheel
     * matplotlib
 
-## III. Custon Multiple Sequence Alignment
+## III. Custom Multiple Sequence Alignment
 
 
 
