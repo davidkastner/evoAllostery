@@ -118,7 +118,7 @@ When it completes, the figure will be placed automatically in the Figures direct
 For reference, an example of the figure has been provided in the Figures directory.
 It is called "fig1_example.png."
 
-> git clone https://github.com/davidkastner/domain-clusters.git  
+> git clone https://github.com/davidkastner/siglec-sca.git  
 > cd domain-clusters/Scripts  
 > python data_analysis.py  
 
