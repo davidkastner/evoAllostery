@@ -25,33 +25,31 @@ https://ranganathanlab.gitlab.io/pySCA/
 
 ### Raw data description
 
-
 #### Custom MSA
-The raw data at the heart of our project is a single binary database file. The sequences were generated using PSI-BLAST, with the sequence of the siglec-7 crystal structure used as the query (PDB:1O7V).
-The query length was set to match the crystal structure (PDB:1O7V). 
+The multiple sequence alignment was generated using PSI-BLAST, with the sequence of the siglec-7 crystal structure used as the query (PDB:1O7V).
 To increase the accuracy and prevent false hits, we set the e-value threshold to 1E-7 and a word size of two in both iterations. 
 A total of 9552 sequences were retrieved from the non-redundant (nr) database. For phylogenetic annotation, we wrote a script to parse the accession 
 numbers from the text file (can be found in the _Scripts_ directory). We used the 'ncbi' option in annotateMSA which uses the Biopython NCBI Entrez utility
 to look up taxonomic information.
 
 #### PFAM Analysis
-This file contains a multiple sequence alignment generated from 60,000 V-set sequences.
+This file contains a multiple sequence alignment generated from 73,704 V-set sequences.
 Using the pySCA API, the multiple sequence alignment has been enhanced to include phylogenetic metadata.
-While this dataset can be easily accessed via the PFam database website,
-we have included the processed database file here as they can take up to 7 hours to download and annotate.
-However, we will outline the process below for those who would benefit.
-You can find the database file in the _Data_ directory.
-For the original multiple sequence alignment data visit and select _Generate_:  
+This dataset can be easily accessed via the PFam database website.
+The annotation step is computationally expensive can take up to 7 hours to download and annotate.
+For the original multiple sequence alignment data visit the following site and select _Generate_:  
 https://pfam.xfam.org/family/V-set#tabview=tab3
 
 ## II. Installation
 ### Folder structure
 The repo is divided into three key directories: _Data_, _Figures_, and _Scripts_.
-The _Data_ directory contains the raw database file with the multiple sequence alignment and phylogenetic annotations.
-The _Figures_ directory contains an example output figure for comparision and is where any output figures will be saved.
-The _Scripts_ directory contains a python script that interacts with the database file.
-The script called _data_analysis_ currently will generated a single figure;
-however, more functionality will be added in the future.
+The _Data_ directory contains three sub folders _Alignments_, _Fasta_, and _Structures_.
+_Alignments_ contains all six of the multiple sequence alignments we used in the paper.
+_Fasta_ contains the original psi-blast file and _Structures_ contains the final PyMol files to vizualize the sectors.
+The _Figures_ directory contains is where any output figures will be saved.
+The _Scripts_ directory contains our full python script called _data_analysis_ that interacts with the processed alignment file.
+It also contains the R script that was used to perform the Decipher multiple sequence alignment.
+The script called _data_analysis_ currently will generated a single figure.
 
 ### Installing dependencies
 In order to run these calculations, we will need to install some dependencies.
