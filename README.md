@@ -97,14 +97,15 @@ To facilitate reproducibility, we have included all six multiple sequence alignm
 The alignment files were generated with Decipher, Mafft L-INS-i, MUSCLE, Kalign, FAMSA, or Promals3D.
 Depending on the algorithm, the processing time can range anywhere from a few seconds to a few days.
 Therefore, to facilitate reproducibility, we have included all processed alignments.
-However, the alignments can be reproduced with the following commands:
+However, once your alignment program of choice has been downloaded, 
+you can generate alignments with the following commands:
 
-**Decipher**: 
-**L-INS-i**: 
-**MUSCLE**: 
-**Kalign**: 
-**FAMSA**: 
-**Promals3D**: 
+> **Decipher**: R script  
+> **L-INS-i**: mafft-linsi --localpair --anysymbol --thread -1 --treeout in.fasta > out.an  
+> **MUSCLE**: ./muscle3.8.31_i86darwin64 -in v9.fasta -out v9.an  
+> **Kalign**: kalign  -i in.fasta -o out.an  
+> **FAMSA**: ./famsa in.fasta out.an   
+> **Promals3D**: http://prodata.swmed.edu/promals3d/promals3d.php  
 
 ### Processing
 Add the alignment file and the PDB to the pySCA directory at ./pySCA-master/data/.
