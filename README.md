@@ -13,7 +13,6 @@
 3. **Multiple sequence alignment**
     * Alignment protocols
     * Processing
-    * Core calculations
 5. **Generate Analysis**
     * _data_analysis.py_
 
@@ -93,11 +92,24 @@ https://ranganathanlab.gitlab.io/pySCA/install/
 
 ## III. Custom Multiple Sequence Alignment
 
+### Alignment protocols
+To facilitate reproducibility, we have included all six multiple sequence alignment test cases referenced in the paper.
+The alignment files were generated with Decipher, Mafft L-INS-i, MUSCLE, Kalign, FAMSA, or Promals3D.
+Depending on the algorithm, the processing time can range anywhere from a few seconds to a few days.
+Therefore, to facilitate reproducibility, we have included all processed alignments.
+However, the alignments can be reproduced with the following commands:
 
+**Decipher**: 
+**L-INS-i**: 
+**MUSCLE**: 
+**Kalign**: 
+**FAMSA**: 
+**Promals3D**: 
 
-Add all three files to the pySCA directory at ./pySCA-master/data/.
+### Processing
+Add the alignment file and the PDB to the pySCA directory at ./pySCA-master/data/.
 Run the following commands from the terminal to process the annotated MSA file.
-These commands create the same .db file that we have provided.
+These commands create a database file (.db) that will be used by pySCA.
 For benchmarking purposes, you should know that the first line is the most computationally expensive.
 It can take several hours. The following three should take less than 10 minutes.
 
