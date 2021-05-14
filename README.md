@@ -27,8 +27,8 @@ https://ranganathanlab.gitlab.io/pySCA/
 
 
 #### Custom MSA
-The raw data at the heart of our project is a single binary database file. The sequences were generated using PSI-BLAST, with the sequence of siglec-7 used as
-the input (UNIPROT Q9Y286). The query length was set to match the crystal structure (PDB:1O7V). 
+The raw data at the heart of our project is a single binary database file. The sequences were generated using PSI-BLAST, with the sequence of the siglec-7 crystal structure used as the query (PDB:1O7V).
+The query length was set to match the crystal structure (PDB:1O7V). 
 To increase the accuracy and prevent false hits, we set the e-value threshold to 1E-7 and a word size of two in both iterations. 
 A total of 9552 sequences were retrieved from the non-redundant (nr) database. For phylogenetic annotation, we wrote a script to parse the accession 
 numbers from the text file (can be found in the _Scripts_ directory). We used the 'ncbi' option in annotateMSA which uses the Biopython NCBI Entrez utility
