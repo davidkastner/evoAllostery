@@ -26,7 +26,7 @@ https://ranganathanlab.gitlab.io/pySCA/
 ### Raw data description
 
 
-## Custom MSA:
+#### Custom MSA
 The raw data at the heart of our project is a single binary database file. The sequences were generated using PSI-BLAST, with the sequence of siglec-7 used as
 the input (UNIPROT Q9Y286). The query length was set to match the crystal structure (PDB:1O7V). 
 To increase the accuracy and prevent false hits, we set the e-value threshold to 1x10-7 and a word size of two in both iterations. 
@@ -34,7 +34,7 @@ A total of 9552 sequences were retrieved from the non-redundant (nr) database. F
 numbers from the text file (can be found in the _Scripts_ directory). We used the 'ncbi' option in annotateMSA which uses the Biopython NCBI Entrez utility
 to look up taxonomic information.
 
-## PFAM Analysis:
+#### PFAM Analysis
 This file contains a multiple sequence alignment generated from 60,000 V-set sequences.
 Using the pySCA API, the multiple sequence alignment has been enhanced to include phylogenetic metadata.
 While this dataset can be easily accessed via the PFam database website,
