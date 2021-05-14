@@ -11,7 +11,11 @@
     * Folder structure
     * Installing dependencies
 3. **Multiple sequence alignment**
-4. **Generate the correlation matrix**
+    * Alignment protocols
+    * Processing
+    * Core calculations
+5. **Generate Analysis**
+    * _data_analysis.py_
 
 ## I. Overview
 ### Introduction
