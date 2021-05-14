@@ -83,7 +83,8 @@ https://ranganathanlab.gitlab.io/pySCA/install/
     > cd pySCA-master  
     > pip install .  
 
-4. The pySCA distribution automatically installs the latest compatible versions of the following packages:
+4. The pySCA distribution automatically installs the latest compatible versions of the following packages.
+If you have questions about versions, visit the pySCA GitHub for more information as they change from time to time.
     * numpy
     * scipy
     * argparse
