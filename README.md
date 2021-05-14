@@ -121,18 +121,13 @@ It can take several hours. The following three should take less than 10 minutes.
 
 ## IV. Generating the correlation matrix
 
-Download the _domain-clusters_ repository.
-Inside the scripts directory of the _domain-clusters_ Github repository,
+Download the _siglec_sca_ repository.
+Inside the scripts directory of the _siglec_sca_ Github repository,
 you will find a python script.
-It takes a single file as input, the provided .db file, and outputs the figure.
+It takes a single file as input, the .db file generated as described above.
 With pySCA and dependencies successfully installed,
-this script will create a histogram of all pairwise interactions within the dataset.
-It will also generate a correlation matrix, which shows which sequences within the MSA are correlated.
-Due to the size of the database file, this script can take 15 minutes to complete.
-When it completes, the figure will be placed automatically in the Figures directory.
-For reference, an example of the figure has been provided in the Figures directory.
-It is called "fig1_example.png."
-
+this script will create a all the figures referenced in our paper that can be generated programatically.
+It will also generate your PyMol files for vizualization.
 > git clone https://github.com/davidkastner/siglec-sca.git  
 > cd domain-clusters/Scripts  
 > python data_analysis.py  
