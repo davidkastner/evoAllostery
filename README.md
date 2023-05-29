@@ -18,12 +18,12 @@
 
 ## I. Overview
 ### Introduction
-The purpose of these repo is to facilitate running statistical coupling analysis for the V-set family proteins.
+The purpose of this repo is to facilitate running statistical coupling analysis for the V-set family proteins.
 Specifically, the project is looking at amino acid co-evolution in human siglecs.
 The repo starts from raw structural and sequence data and generates a multiple sequence alignment based on the sequence of Siglec-7.
 The alignment is then processed to extract evolutional information to find domains under unique selectional pressure.
 The pySCA code is written and maintained by the Ranganathan Lab and is used extensively throughout the analysis (1,2).
-It is beautifully documented here:  
+It is documented here:  
 https://ranganathanlab.gitlab.io/pySCA/
 
 ### Raw data description
@@ -32,7 +32,7 @@ https://ranganathanlab.gitlab.io/pySCA/
 The multiple sequence alignment was generated using PSI-BLAST, with the sequence of the siglec-7 crystal structure used as the query (PDB:1O7V).
 To increase the accuracy and prevent false hits, we set the e-value threshold to 1E-7 and a word size of two in both iterations. 
 A total of 9552 sequences were retrieved from the non-redundant (nr) database. For phylogenetic annotation, we wrote a script to parse the accession 
-numbers from the text file (can be found in the _Scripts_ directory). We used the 'ncbi' option in annotateMSA which uses the Biopython NCBI Entrez utility
+numbers from the text file (can be found in the _Scripts_ directory). We used the 'ncbi' option in annotateMSA, which uses the Biopython NCBI Entrez utility
 to look up taxonomic information.
 
 #### PFAM Analysis
