@@ -137,3 +137,6 @@ It will also generate your PyMol files for vizualization.
 1. Rivoire, O., et al. Evolution-Based Functional Decomposition of Proteins. (2016)
 2. Halabi, N., et al. Protein sectors: evolutionary units of three-dimensional structure. Cell. 138, (2009)
 3. Salinas, V., et al. Coevolution-based inference of amino acid interactions underlying protein function (2018)
+
+#### Copyright
+&copy; 2025,  David W. Kastner and Anna Romanov
